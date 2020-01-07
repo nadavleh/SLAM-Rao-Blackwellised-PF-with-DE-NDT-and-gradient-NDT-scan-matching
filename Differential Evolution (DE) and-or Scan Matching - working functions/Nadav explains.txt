@@ -1,0 +1,7 @@
+optimizer - master. doenloaded from https://github.com/guoliu/optimizer.
+Ive implemented scan matching using the DE algorithm in this directory, its in C:\...\optimizer-master\try by nadav
+just need to add the \optimizer-master to path
+
+
+matlab's optimizer - this is just using the optimizer matlab provides 
+https://www.mathworks.com/help/optim/ug/fmincon.html#d117e83557

@@ -1,0 +1,27 @@
+here i preform SLAM with Nm maps, where each map has Np particles
+
+there are versions without Scan Matching (SM) and versions with.
+
+The primery scripts: (learning curve scripts)
+SLAM_different_Np_Nm - learning curve script, i dont remember if it runs
+SLAM_different_Np_Nm_V2_small_chanes_and commentt - learning curve script, i dont remember if it runs
+SLAM_different_Np_Nm_V3 - learning curve script, i dont remember if it runs
+
+The primery scripts: (working versions)
+SLAM_different_Np_Nm_V4 - no scan matching
+SLAM_different_Np_Nm_V5_argmax - no scan matching
+SLAM_different_Np_Nm_V6_fminconScanMatch - Yes scan matching, works poorly
+
+
+All other functions and scripts in the folder have good description in them. 
+you may see alot of versions of the same function, for example weigh_particles_slam,weigh_particles_slam2,weigh_particles_slam3
+ect.. in each vesrion there is an explenation how it differs from the previous version (usually small changes like using L
+scans instead of all), and usually the most recent primary script, will use the most recent function, for example SLAM_different_Np_Nm_V3.m 
+will make use of weigh_particles_slam3.m
+
+
+Notice! update_map.m is not good as it updates x, y crdnts in different order, use only update_map2.m!!!!!!! it doesn
+
+
+The folder "done - only essenital functions and data sets" contains only the relevant functions to run, so as to not have 
+balagan (they are all copied from this folder). 

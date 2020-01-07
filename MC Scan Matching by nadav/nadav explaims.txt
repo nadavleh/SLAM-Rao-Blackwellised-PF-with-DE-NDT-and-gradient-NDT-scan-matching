@@ -1,0 +1,13 @@
+here i preform SLAM with a map for each particle, where in each map i generate Ns samples each step from a proposal Gaussian 
+and then i weigh them and resample them. after that i calculate their mean and generate another gaussian
+around that mean, and sample-resample again. This is done untill convergence.
+
+
+This is MC Scan Matching as i explain in the pdf in this folder in the file "MC scan matching by nadav.pdf"
+
+
+The results are not that good....
+
+
+The scan matching is done in the function MC_ScanMatch2(), apart from that the script is symillar to the previous ones 
+that are without scan matching
