@@ -37,7 +37,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/nadavleh/SLAM-Rao-Blackwellised-PF-with-DE-NDT-and-gradient-NDT-scan-matching/screenshot.png)
+[![Product Name Screen Shot][product-screenshot]](https://github.com/nadavleh/SLAM-Rao-Blackwellised-PF-with-DE-NDT-and-gradient-NDT-scan-matching/blob/master/screenshot.png)
 
 In this project we use the real-time wheel odometry data aswell as real-time LIDAR scans from a robot simulated in the Gazebo environment, in order to map its surroundings and localize itself within the constructed map. The technique we use here is based on the Rao-Blackwell marginalization of the posterior distribution of the state vector, which consists of the robot's location (x,y), oriantation (angle), and each of the grid's cells. This marginalization enables us to construct a map from the LIDAR readings at time t, and then to localize the robot at time t+1, within the constructed map of the previous time step (the localization uses the odometry as model propagation and the LIDAR readings for the Bayesian likelyhood update). Once the localization is done (using a particle filter), the robot may continue to build the map using the same lidar scans it has used to localize itself at time t+1, to produce un updated map at time t+1. 
 
@@ -52,7 +52,7 @@ The files are interliked, make sure they are all in your MATLAB's path inorder f
 
 
 ## Usage
-
+Simply run the a file named "SLAM_different_Np_Nm_V<x>_<NDT optimizer>.m". Here "different_Np_Nm" stands for different number of maps and different number of particles (in each map), "v<x>" stands for version number x (x varies from 1 to 7) and "<NDT optimizer>" is a semantic variable standing for the function which we use to optimize the NDT function which may vary from DE to MATLAB's fmincon() optimizer.
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -84,5 +84,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [issues-shield]: https://img.shields.io/github/issues/nadavleh/repo.svg?style=flat-square
 [issues-url]: https://github.com/nadavleh/repo/issues
 [license-shield]: https://img.shields.io/github/license/nadavleh/repo.svg?style=flat-square
-[product-screenshot]: https://github.com/nadavleh/Chess_AI/blob/master/images/screenshot.png
+[product-screenshot]: https://github.com/nadavleh/SLAM-Rao-Blackwellised-PF-with-DE-NDT-and-gradient-NDT-scan-matching/blob/master/screenshot.png
 
