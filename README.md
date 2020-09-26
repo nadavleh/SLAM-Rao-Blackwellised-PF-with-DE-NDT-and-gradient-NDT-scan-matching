@@ -1,31 +1,4 @@
 
-<!--
-*** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the repo and create a pull request or simply open
-*** an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
-***
-***
-***
-*** To avoid retyping too much info. Do a search and replace for the following:
-*** github_username, repo_name, twitter_handle, email
--->
-
-
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -64,7 +37,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/nadavleh/Chess_AI/blob/master/images/screenshot.png)
+[![Product Name Screen Shot][product-screenshot]](https://github.com/nadavleh/SLAM-Rao-Blackwellised-PF-with-DE-NDT-and-gradient-NDT-scan-matching/screenshot.png)
 
 In this project we use the real-time wheel odometry data aswell as real-time LIDAR scans from a robot simulated in the Gazebo environment, in order to map its surroundings and localize itself within the constructed map. The technique we use here is based on the Rao-Blackwell marginalization of the posterior distribution of the state vector, which consists of the robot's location (x,y), oriantation (angle), and each of the grid's cells. This marginalization enables us to construct a map from the LIDAR readings at time t, and then to localize the robot at time t+1, within the constructed map of the previous time step (the localization uses the odometry as model propagation and the LIDAR readings for the Bayesian likelyhood update). Once the localization is done (using a particle filter), the robot may continue to build the map using the same lidar scans it has used to localize itself at time t+1, to produce un updated map at time t+1. 
 
