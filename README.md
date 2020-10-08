@@ -8,7 +8,6 @@
   <h3 align="center">SLAM using Rao-Blawellised Particle Filter with DE-NDT and gradient NDT scan-matching</h3>
 
   <p align="center">
-    This is simple python chess program written with pygame for the GUI. The chess AI uses minimax with alpha-beta prunning
     <br />
     <a href="https://github.com/nadavleh/Chess_AI"><strong>Explore the docs »</strong></a>
     <br />
